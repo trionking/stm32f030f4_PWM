@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"gl_v100\startup_stm32f030x6.o"
+"gl_v100\main.o"
+"gl_v100\stm32f0xx_it.o"
+"gl_v100\stm32f0xx_hal_msp.o"
+"gl_v100\stm32f0xx_hal_adc.o"
+"gl_v100\stm32f0xx_hal_adc_ex.o"
+"gl_v100\stm32f0xx_hal_tim.o"
+"gl_v100\stm32f0xx_hal_tim_ex.o"
+"gl_v100\stm32f0xx_hal_uart.o"
+"gl_v100\stm32f0xx_hal_uart_ex.o"
+"gl_v100\stm32f0xx_hal_rcc.o"
+"gl_v100\stm32f0xx_hal_rcc_ex.o"
+"gl_v100\stm32f0xx_hal.o"
+"gl_v100\stm32f0xx_hal_i2c.o"
+"gl_v100\stm32f0xx_hal_i2c_ex.o"
+"gl_v100\stm32f0xx_hal_gpio.o"
+"gl_v100\stm32f0xx_hal_dma.o"
+"gl_v100\stm32f0xx_hal_cortex.o"
+"gl_v100\stm32f0xx_hal_pwr.o"
+"gl_v100\stm32f0xx_hal_pwr_ex.o"
+"gl_v100\stm32f0xx_hal_flash.o"
+"gl_v100\stm32f0xx_hal_flash_ex.o"
+"gl_v100\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "gl_v100\gl_v100.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "gl_v100.map" -o gl_v100\gl_v100.axf
