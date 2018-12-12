@@ -83,6 +83,8 @@ void Error_Handler(void);
 #define LD_Pin GPIO_PIN_4
 #define LD_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
+//#define LD_Pin GPIO_PIN_4
+//#define LD_GPIO_Port GPIOA
 
 /* USER CODE END Private defines */
 
